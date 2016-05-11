@@ -1,0 +1,22 @@
+These set of styles are affect the home page
+Code, listed below has to be pasted into "Appearance -> Theme Options -> Custom code -> Custon CSS" textfield in admin panel of site.
+
+/*Titles of sections in home page styles*/
+h2.cb-module-title {
+    font-family: "Clicker Script",cursive;
+    text-transform: lowercase !important;
+    font-weight: 400;
+}
+
+/*Top menu styles*/
+@media only screen and (min-width: 1200px) {
+    #cb-nav-bar .cb-main-nav > li > a {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 8px 8px;
+    }
+}
+
+
+Code, listed below has to be pasted into "Appearance -> Theme Options -> Custom code -> CODE FOR <HEAD> SECTION" textfield in admin panel of site.
+<link href='https://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
