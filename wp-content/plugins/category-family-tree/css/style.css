@@ -1,0 +1,13 @@
+.cat-family-tree > li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.cat-family-tree > ul > ul > li > a {
+  color: #00bad2 !important;
+}
+.cat-family-tree > ul > ul > li > a:visited {
+  color: #00a3b9;
+}
