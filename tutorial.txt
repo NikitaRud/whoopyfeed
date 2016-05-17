@@ -1,69 +1,49 @@
-Руководство по работе с админпанелью сайта Woopeefeed.
+The Admin panel tutorial
 
-Для входа в админпанель сайта необходимо к URL адресу сайта добавить "/wp-admin" и нажать Enter.
-Логин для входа: whoopeefeed_admin
-Пароль для входа: )L9MXY&BUWWnZE4Iqt
+To enter admin panel add /wp-admin to URL.
+Login:whoopeefeed_admin
+Password:)L9MXY&BUWWnZE4Iqt
 
-Для управления постами (пост - одна статья о чем либо) необходимо в меню (слева)
-перейти по ссылке Posts -> All Posts.
+To manage posts go to - Menu -> All Posts
 
-Там можно удалить/отредактировать существующие посты а также добавить новые.
-Для добавления нового поста необходимо заполнить поля: title, textfield, feautered
-image и прочие (по необходимости). Для того чтобы соотнести новый пост с какой
-либо категорией нужно указать категорию этого поста в блоке "Categories".
-После того, как новый пост настроен и готов к публикации нужно нажать синюю
-кнопку "Publish" справа. После этого новый пост станет доступен к просмотру на сайте.
+You can delete, edit or add new posts here.
+To add new post you need to fill 'title', 'textfield', 'featured image' and other
+fields. To link post to a category - choose it in 'Categories' block. After all
+changes were made - click 'Publish' button. The new post will be then available
+on the website.
 
-Разделы сайта, отображаемые в главном меню представленны так называемыми категориями.
-Для управления перечнем категорий необходимо в меню (слева) перейти по ссылке Posts -> Categories.
-Раздел Categories представляет из себя два столбца. В левом форма для создания новой категории.
-В правом - перечень существующих категорий и субкатегорий (как в главном меню сайта).
+Newsletter subscription
 
+Subscription is managed by WP Subscribe widget and Mailchimp plugin. It can work
+with AWeber, MailChimp, FeedBurner. I've setted up the MailChimp for example. It
+is free and offers many letter templates. WP Subscribe subscribe form is located
+in footer - managed in 'Appearance -> Widgets'.
 
-Подписка.
-Функции подписки пользователей сайта на новостные рассылки берет на себя плагин WP Subscribe.
-Данный плагин имеет возможность работать с тремя службами рассылки: AWeber, MailChimp, FeedBurner.
-В качестве примера для тестирования работы с рассылкой нами была выбрана служба MailChimp.
-Она достаточна проста в работе, имеет бесплатный тарифный план и обладает множеством
-ярких шаблонов писем для рассылки клиентам.
-Для начала необходимо создать учетную запись в службе MailChimp. Для этого в качестве
-логина указывается Ваша электронная почта. После регистрации на эту электронную почту приходит
-confirmation letter.
-Создав учетную запись можно приступать к привязке её к плагину WP Subscribe. Для этого
-нам необъодимо найти два параметра: Mailchimp API key и Mailchimp List ID.
-Mailchimp API key:
-1) Click your profile name to expand the Account Panel, and choose Account.
-2) Click the Extras drop-down menu and choose API keys.
-3) Copy an existing API key or click the Create A Key button.
-4) Name your key descriptively, so you know what application uses that key.
-See this link (http://kb.mailchimp.com/accounts/management/about-api-keys#Finding-or-generating-your-API-key)
+MailChimp for Wordpress:
+This is a subscription form that works with Popup Maker plugin. Popup Maker
+creates a popup window after specified time - Mailchimp is showing the form
+itself inside the popup. It is now set to 1.5 seconds after user first visits
+the site.
 
 Mailchimp List ID:
-Этот ID - уникальный номер, присвоенный вашему конкретному списку рассылки (их
-может быть несколько для разных категорий подписчиков). То есть
-если вы только что создали аккаунт, то списка рассылки у вас нет. Поэтому для того,
-чтобы получить Mailchimp List ID необходимо создать список рассылки (пустой для начала).
-Для этого в меню (сверху слева) идем по ссылке Lists. На открывшейся вкладке
-нажимаем кнопку Create List. Заполняем предложенные формой поля и создаем пустой список.
-После этого:
+The ID is a unique number that will be linked to mailing list (could be several
+for different user groups). To create mailing list go to 'Lists' -> 'Create List'
+(mailchimp.com)
+
 1) Navigate to the Lists page.
 2) Click the drop-down menu next to the list you want to work with, and choose Settings.
 3) Scroll to find the unique List ID field. The string of letters and numbers is the list ID.
 See this link (http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id)
-После этих шагов можно протестировать работу плагина, внеся адрес какой либо
-электронной почты в форму на нашем сайте и нажав кнопку Sign Up Now. Если все
-настроено верно спустя несколько минут в нашем списке рассылки появится введенный вами адрес.
 
-Тестовая рассылка.
-Для тестирования работы сервиса MailChimp можно внести через наш сайт несколько
-(желательно реальных - можно временных) адресов электронной почты и сделать тестовую рассылку.
-Для этого в врехнем меню слева идем по ссылке Campaigns и создаем новую рассылку.
-Создание рассылки состоит из 5 шагов:
-1) выбор адресатов
-2) настройка опций самой рассылки
-3) выбор шаблона письма
-4) создание дизайна
-5) подтверждение рассылки
-Через несколько минут после подтверждения на емаилы указанные в списке должны прийти письма.
+You can test the plugin now subscribing to newsletter on the website.
+The email you entered should appear in the mailing list.
 
-Newsletter design is creating by user in MailChimp service from many templates.
+To create newsletter go to 'Campaigns' and follow the simple steps.
+
+All plugins installed in development process:
+1) Category Family Tree - for showing the subcategories
+2) EWWW Image Optimizer - to optimize site speed
+3) MailChimp for Wordpress - newsletter
+4) Popup Maker - subscription popup
+5) WP Subscribe - subscription plugin
+6) Yoast SEO - for SEO optimization
